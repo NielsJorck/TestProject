@@ -1,0 +1,6 @@
+<template>
+    IKKE SIKKER PÅ, HVOR DU SKAL STARTE?
+    Brug min gratis kalorieberegner nu til at regne ud, hvor meget du skal spise for at nå dine mål.
+    <NuxtLink to="/calorie-calculator">Brug nu</NuxtLink>
+    <NuxtImg src="/img/Forsh-Fitness-Calorie-Calculator.png" />
+</template>
