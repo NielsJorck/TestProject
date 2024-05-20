@@ -1,7 +1,5 @@
 <template>
-    <ClientOnly>
-        <BeeFit />
-    </ClientOnly>
+    <BeeFit />
     <Welcome />
     <AboutMe />
     <Included />
