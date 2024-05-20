@@ -20,4 +20,5 @@
         Vi har en chance i livet til at opnå vores drømme, så hvorfor udsætte dem?
 
     </p>
-<button>Lad mig hjælpe dig</button></template>
+    <NuxtLink to="#bee-fit">Lad mig hjælpe dig</NuxtLink>
+</template>

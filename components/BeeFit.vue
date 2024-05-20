@@ -1,30 +1,31 @@
 <template>
-
-<div class="beefit-lead-form" id="example-lead-form">
-    <div class="form-content">
-        <div class="progressbar">
-            <div class="progress"></div>
+<div id="bee-fit">
+    <div class="beefit-lead-form" id="example-lead-form">
+        <div class="form-content">
+            <div class="progressbar">
+                <div class="progress"></div>
+            </div>
+            <form>
+                <div class="step-container"></div>
+            </form>
+            <div class="button-container">
+                <div class="lead-form-button previous" on-click="previousStep(); trackSubmit()">Tilbage</div>
+                <div class="lead-form-button next" on-click="nextStep(); trackSubmit()">Næste</div>
+                <div id="beefit-submit-button" class="lead-form-button submit" on-click="submitForm()">Kom i gang nu!</div>
+            </div>
         </div>
-        <form>
-            <div class="step-container"></div>
-        </form>
-        <div class="button-container">
-            <div class="lead-form-button previous" on-click="previousStep(); trackSubmit()">Tilbage</div>
-            <div class="lead-form-button next" on-click="nextStep(); trackSubmit()">Næste</div>
-            <div id="beefit-submit-button" class="lead-form-button submit" on-click="submitForm()">Kom i gang nu!</div>
+        <div class="loading-step" style="display: none">
+            <div class="lds-dual-ring"></div>
         </div>
-    </div>
-    <div class="loading-step" style="display: none">
-        <div class="lds-dual-ring"></div>
-    </div>
-    <div class="complete-step" style="display: none">
-        <div class="complete-checkmark">
-            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-            </svg>
+        <div class="complete-step" style="display: none">
+            <div class="complete-checkmark">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+            <div class="complete-text">COMPLETE 🎉</div>
         </div>
-        <div class="complete-text">COMPLETE 🎉</div>
     </div>
 </div>
 </template>

@@ -10,5 +10,5 @@ Kvaliteten af mine planer, er ikke noget jeg går på kompromis med. Så derfor 
 
 Der er mange der har en passion og drøm, om at opnå noget i livet med deres træning. Hvad end det er vægttab, muskelbygning, forøget energi i hverdagen, generel sundhed eller mental styrke. Så har det alt sammen en forbedrende effekt, igennem træning og en sund levestil.
     </p>
-<button>Lad mig hjælpe dig</button>
+<NuxtLink to="#bee-fit">Lad mig hjælpe dig</NuxtLink>
 </template>
