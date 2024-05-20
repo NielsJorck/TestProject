@@ -13,7 +13,8 @@ jobs:
     #   - run: corepack enable
       - uses: oven-sh/setup-bun@v1
       - run: bun install
-      - run: bunx nuxt build --preset github_pages
+      - run: NUXT_APP_BASE_URL=/TestProject/ bunx nuxt build --preset github_pages
+    #   - run: bunx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
