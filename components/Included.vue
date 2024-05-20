@@ -15,5 +15,5 @@
     </ul>
 
 
-<NuxtImg src="Forsh-Fitness-App.png"></NuxtImg>
+<NuxtImg src="/img/Forsh-Fitness-App.png"></NuxtImg>
 </template>
