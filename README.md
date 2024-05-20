@@ -7,6 +7,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 * Styling
 * Menu
 * Translations (i18n)
+* Add global page wrapper
+* * Add Title
 
 ## Setup
 
