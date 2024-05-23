@@ -1,60 +1,61 @@
 <template>
-<div id="bee-fit">
-    <div class="beefit-lead-form" id="example-lead-form">
-        <div class="form-content">
-            <div class="progressbar">
-                <div class="progress"></div>
+    <div id="bee-fit">
+        <div class="beefit-lead-form" id="example-lead-form">
+            <div class="form-content">
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+                <form>
+                    <div class="step-container"></div>
+                </form>
+                <div class="button-container">
+                    <div class="lead-form-button previous" on-click="previousStep(); trackSubmit()">Tilbage</div>
+                    <div class="lead-form-button next" on-click="nextStep(); trackSubmit()">Næste</div>
+                    <div id="beefit-submit-button" class="lead-form-button submit" on-click="submitForm()">Kom i gang nu!
+                    </div>
+                </div>
             </div>
-            <form>
-                <div class="step-container"></div>
-            </form>
-            <div class="button-container">
-                <div class="lead-form-button previous" on-click="previousStep(); trackSubmit()">Tilbage</div>
-                <div class="lead-form-button next" on-click="nextStep(); trackSubmit()">Næste</div>
-                <div id="beefit-submit-button" class="lead-form-button submit" on-click="submitForm()">Kom i gang nu!</div>
+            <div class="loading-step" style="display: none">
+                <div class="lds-dual-ring"></div>
             </div>
-        </div>
-        <div class="loading-step" style="display: none">
-            <div class="lds-dual-ring"></div>
-        </div>
-        <div class="complete-step" style="display: none">
-            <div class="complete-checkmark">
-                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                </svg>
+            <div class="complete-step" style="display: none">
+                <div class="complete-checkmark">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                </div>
+                <div class="complete-text">COMPLETE 🎉</div>
             </div>
-            <div class="complete-text">COMPLETE 🎉</div>
         </div>
     </div>
-</div>
 </template>
 
 <script lang="ts" setup>
 useHead({
-  title: 'Forsh Fitness',
-  meta: [
-    {
-      name: 'description',
-      content: 'Forsh Fitness'
-    }
-  ],
-  link: [
-    {
-        href: "https://fonts.googleapis.com/css2?family=Mulish",
-        rel: "stylesheet"
-    }, 
-    {
-        href: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v8/beefit-lead-form-style.css" ,
-        rel: "stylesheet"
-    }],
-  script: [
-    {
-        src: "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    },
-    {
-        src: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v8/beefit-lead-form-min.js" 
-    }
+    title: 'Forsh Fitness',
+    meta: [
+        {
+            name: 'description',
+            content: 'Forsh Fitness'
+        }
+    ],
+    link: [
+        {
+            href: "https://fonts.googleapis.com/css2?family=Mulish",
+            rel: "stylesheet"
+        },
+        {
+            href: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v8/beefit-lead-form-style.css",
+            rel: "stylesheet"
+        }],
+    script: [
+        {
+            src: "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        },
+        {
+            src: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v8/beefit-lead-form-min.js"
+        }
     ],
 })
 
@@ -246,70 +247,80 @@ onMounted(() => {
 })
 </script>
 <style>
-    .beefit-lead-form .button-label h2 {
-        font-size: 1em;
-        font-family: 'Mulish', Sans-Serif;
-        line-height: normal;
-        margin: 0px;
-        font-weight: bold;
-        color: black;
-    }
-    .beefit-lead-form {
-        font-family: 'Mulish', Sans-Serif;
-        max-width: initial;
-        background: transparent;
-        border-radius: 10px;
-        padding: 25px;
-        margin-top: 50px;
-    }
-    .beefit-lead-form .progressbar {
-        height: 9px;
-        background: rgb(117, 117, 117);
-        width: 100%;
-        border-radius: 4px;
-    }
-    .beefit-lead-form .step .lead-form-title {
-        margin-top: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-    }
-    .beefit-lead-form .progressbar .progress {
-        height: 9px;
-        background: white;
-        width: 20%;
-        border-radius: 4px;
-        transition: width 0.3s;
-    }
-    .beefit-lead-form .button-label {
-        color: white;
-        background: white;
-    }
-    .beefit-lead-form .radio-label:checked + .button-label {
-        background: rgb(69, 69, 69);
-        color: white !important;
-    }
-    .beefit-lead-form .radio-label:checked + .button-label h2 {
-        color: white !important;
-    }
-    .beefit-lead-form .button-container .lead-form-button.next {
-        background: white;
-        color: black;
-    }
-    .beefit-lead-form .button-container .lead-form-button.next:hover {
-        background: black;
-        color: #ffffff;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 20%), inset 0 -3px 0 rgb(0 0 0 / 32%);
-    }
-    .beefit-lead-form .button-container .lead-form-button.previous {
-        background: white;
-        color: #545454;
-    }
-    .beefit-lead-form .complete-text {
-        text-align: center;
-        margin-top: -10px;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-    }
-</style>
+.beefit-lead-form .button-label h2 {
+    font-size: 1em;
+    font-family: 'Mulish', Sans-Serif;
+    line-height: normal;
+    margin: 0px;
+    font-weight: bold;
+    color: black;
+}
+
+.beefit-lead-form {
+    font-family: 'Mulish', Sans-Serif;
+    max-width: initial;
+    background: transparent;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.beefit-lead-form .progressbar {
+    height: 9px;
+    background: rgb(117, 117, 117);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.beefit-lead-form .step .lead-form-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.beefit-lead-form .progressbar .progress {
+    height: 9px;
+    background: white;
+    width: 20%;
+    border-radius: 4px;
+    transition: width 0.3s;
+}
+
+.beefit-lead-form .button-label {
+    color: white;
+    background: white;
+}
+
+.beefit-lead-form .radio-label:checked+.button-label {
+    background: rgb(69, 69, 69);
+    color: white !important;
+}
+
+.beefit-lead-form .radio-label:checked+.button-label h2 {
+    color: white !important;
+}
+
+.beefit-lead-form .button-container .lead-form-button.next {
+    background: white;
+    color: black;
+}
+
+.beefit-lead-form .button-container .lead-form-button.next:hover {
+    background: black;
+    color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%), inset 0 -3px 0 rgb(0 0 0 / 32%);
+}
+
+.beefit-lead-form .button-container .lead-form-button.previous {
+    background: white;
+    color: #545454;
+}
+
+.beefit-lead-form .complete-text {
+    text-align: center;
+    margin-top: -10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}</style>

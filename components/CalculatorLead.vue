@@ -5,6 +5,6 @@
     <p>
         Brug min gratis kalorieberegner nu til at regne ud, hvor meget du skal spise for at nå dine mål.
     </p>
-    <NuxtLink to="/calorie-calculator">Brug nu</NuxtLink>
+    <NuxtLink class="button" to="/calorie-calculator">Brug nu</NuxtLink>
     <NuxtImg src="/img/Forsh-Fitness-Calorie-Calculator.png" />
 </template>

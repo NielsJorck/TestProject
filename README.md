@@ -4,7 +4,6 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## TODO
 
-* Favicon (Broken on github pages as it doesn't get the subpage path injected)
 * Styling
 * Menu
 * Translations (i18n)
