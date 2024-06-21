@@ -1,13 +1,15 @@
 <template>
-    <!-- <BeeFit /> -->
-    <Welcome />
-    <AboutMe />
-    <Included />
-    <CalculatorLead />
+    <div class="stack">
+        <!-- <BeeFit /> -->
+        <Welcome />
+        <AboutMe />
+        <Included />
+        <CalculatorLead />
+    </div>
 </template>
 
-<script setup>
-
-</script>
-
-<style></style>
+<style scoped>
+.stack>*+* {
+    margin-top: 4rem;
+}
+</style>

@@ -1,9 +1,9 @@
 <template>
-    <div class="grid grid-cols-2 justify-around">
+    <div class="grid grid-cols-2 gap-16 justify-around items-center justify-items-center">
         <NuxtImg src="/img/welcome_img.jpg" />
-        <section class="flex flex-col gap-4 items-start justify-center">
-            <h1 class="text-5xl font-bold">
-                VELKOMMEN TIL FORSH FITNESS
+        <article class="prose">
+            <h1 class="text-5xl font-bold uppercase">
+                Velkommen til Forsh Fitness
             </h1>
             <p>
                 Med mig som din coach, får du en sparringspartner der drømmer lige så meget om at se en forandring for dig,
@@ -22,6 +22,6 @@
                 effekt, igennem træning og en sund levestil.
             </p>
             <NuxtLink class="button" to="#bee-fit">Lad mig hjælpe dig</NuxtLink>
-        </section>
+        </article>
     </div>
 </template>

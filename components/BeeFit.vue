@@ -33,13 +33,13 @@
 
 <script lang="ts" setup>
 useHead({
-    title: 'Forsh Fitness',
-    meta: [
-        {
-            name: 'description',
-            content: 'Forsh Fitness'
-        }
-    ],
+    // title: 'Forsh Fitness',
+    // meta: [
+    //     {
+    //         name: 'description',
+    //         content: 'Forsh Fitness'
+    //     }
+    // ],
     link: [
         {
             href: "https://fonts.googleapis.com/css2?family=Mulish",
@@ -323,4 +323,5 @@ onMounted(() => {
     color: white;
     font-size: 20px;
     font-weight: bold;
-}</style>
+}
+</style>

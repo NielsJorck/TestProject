@@ -6,9 +6,13 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 * Styling
 * Menu
+* Scrollbar
+* Responsiveness
+* Image sizing
 * Translations (i18n)
-* Add global page wrapper
-* * Add Title
+* BeeFit
+* * style incapsulation
+* * General styling
 
 ## Setup
 

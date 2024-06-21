@@ -1,4 +1,5 @@
 <template>
+    <Menu />
     <NuxtPage />
 </template>
 <script setup>
@@ -17,16 +18,39 @@ useHead({
     {
         rel: 'apple-touch-icon',
         href: `${baseUrl}/img/favicon/FF-Favicon-300x300.jpg`
-    }],
+    },
+    {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap'
+    },
+    {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com'
+    },
+    {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: true
+    }
+    ],
     meta: [
         {
             name: 'msapplication-TileImage',
             content: `${baseUrl}/img/favicon/FF-Favicon-300x300.jpg`
-        }]
+        },
+        {
+            name: "description",
+            content: "Få en dedikeret coach, der deler dit ønske om forandring. Personlige planer tilpasset dig og din træningslokation, fokuseret på vægttab, muskelbygning, energi, sundhed og mental styrke."
+        }],
+    title: 'Forsh Fitness - Personlig træning og coaching',
 })
 </script>
 <style>
 body {
+    /* background-image: url('/img/image5-2-e1704805299149.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
     /* @apply dark:bg-black dark:text-white; */
 }
 
@@ -34,7 +58,7 @@ body {
     outline: 1px solid green;
 } */
 .button {
-    @apply bg-red-500 px-4 py-2 mt-4 uppercase font-bold;
+    @apply bg-primary-500 px-4 py-2 mt-4 uppercase font-bold no-underline;
 }
 
 p {
