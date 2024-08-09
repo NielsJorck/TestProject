@@ -217,6 +217,9 @@ onMounted(() => {
         <div class="prose text-white">
             <h1 class="text-center">{{ $t('beefit.title') }}</h1>
             <p>{{ $t('beefit.body') }}</p>
+            <div class="grid justify-center pb-8">
+                <Icon name="fa6-solid:arrow-down-long" size="2em"></Icon>
+            </div>
             <div id="bee-fit" class="max-w-full overflow-hidden bg-black text-white">
                 <div class="beefit-lead-form" id="example-lead-form">
                     <div class="form-content">
