@@ -1,15 +1,9 @@
 <template>
-    <div class="stack">
-        <!-- <BeeFit /> -->
+    <div>
+        <BeeFit />
         <Welcome />
-        <AboutMe />
         <Included />
+        <AboutMe />
         <CalculatorLead />
     </div>
 </template>
-
-<style scoped>
-.stack>*+* {
-    margin-top: 4rem;
-}
-</style>

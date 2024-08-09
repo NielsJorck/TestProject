@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2  gap-16 justify-around items-center justify-items-center">
+    <div class="segment dark">
 
         <article class="prose">
             <h2>
@@ -10,6 +10,6 @@
             </p>
             <NuxtLink class="button" to="/calorie-calculator">Brug nu</NuxtLink>
         </article>
-        <NuxtImg src="/img/Forsh-Fitness-Calorie-Calculator.png" />
+        <NuxtImg src="/img/Forsh-Fitness-Calorie-Calculator.png" height="750" />
     </div>
 </template>

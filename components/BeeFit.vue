@@ -1,45 +1,6 @@
-<template>
-    <div id="bee-fit">
-        <div class="beefit-lead-form" id="example-lead-form">
-            <div class="form-content">
-                <div class="progressbar">
-                    <div class="progress"></div>
-                </div>
-                <form>
-                    <div class="step-container"></div>
-                </form>
-                <div class="button-container">
-                    <div class="lead-form-button previous" on-click="previousStep(); trackSubmit()">Tilbage</div>
-                    <div class="lead-form-button next" on-click="nextStep(); trackSubmit()">Næste</div>
-                    <div id="beefit-submit-button" class="lead-form-button submit" on-click="submitForm()">Kom i gang nu!
-                    </div>
-                </div>
-            </div>
-            <div class="loading-step" style="display: none">
-                <div class="lds-dual-ring"></div>
-            </div>
-            <div class="complete-step" style="display: none">
-                <div class="complete-checkmark">
-                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                    </svg>
-                </div>
-                <div class="complete-text">COMPLETE 🎉</div>
-            </div>
-        </div>
-    </div>
-</template>
 
 <script lang="ts" setup>
 useHead({
-    // title: 'Forsh Fitness',
-    // meta: [
-    //     {
-    //         name: 'description',
-    //         content: 'Forsh Fitness'
-    //     }
-    // ],
     link: [
         {
             href: "https://fonts.googleapis.com/css2?family=Mulish",
@@ -48,7 +9,8 @@ useHead({
         {
             href: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v8/beefit-lead-form-style.css",
             rel: "stylesheet"
-        }],
+        }
+    ],
     script: [
         {
             src: "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -242,12 +204,129 @@ onMounted(() => {
     const result = {};
     setTimeout(function () {
         const form1 = new BeefitLeadForm("example-lead-form", leadForm);
-    }, 1);
+    }, 3000);
 
 })
 </script>
+
+<template>
+    <div class="segment dark">
+        <NuxtImg src="/img/image5-2-e1704805299149.jpeg" height="550" />
+        <div class="prose text-white">
+            <h1 class="text-center">Forsh Fitness</h1>
+            <p>Udfyld formularen herunder for at få et uforpligtende opkald med mig</p>
+            <div id="bee-fit" class="max-w-full overflow-hidden bg-black text-white">
+                <div class="beefit-lead-form" id="example-lead-form">
+                    <div class="form-content">
+                        <div class="progressbar">
+                            <div class="progress"></div>
+                        </div>
+                        <form>
+                            <div class="step-container"></div>
+                        </form>
+                        <div class="button-container">
+                            <div class="lead-form-button previous" on-click="previousStep(); trackSubmit()">Tilbage</div>
+                            <div class="lead-form-button next" on-click="nextStep(); trackSubmit()">Næste</div>
+                            <div id="beefit-submit-button" class="lead-form-button submit" on-click="submitForm()">Kom i
+                                gang
+                                nu!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loading-step" style="display: none">
+                        <div class="lds-dual-ring"></div>
+                    </div>
+                    <div class="complete-step" style="display: none">
+                        <div class="complete-checkmark">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                        <div class="complete-text">COMPLETE 🎉</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
 <style>
-.beefit-lead-form .button-label h2 {
+.beefit-lead-form {
+    @apply font-serif bg-transparent p-0;
+
+    /* font-family: 'Mulish', Sans-Serif;
+    max-width: initial;
+    background: transparent;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 12px; */
+
+
+
+    /** This is for non checked - Add styling for :checked */
+    .button-label {
+        @apply bg-white hover:bg-primary-200 text-black shadow-none rounded-none hover:shadow-none select-none;
+
+        h2 {
+            @apply text-black;
+        }
+    }
+
+    .radio-label:checked {
+        &+.button-label {
+            @apply bg-primary-500 hover:bg-primary-600 text-white;
+
+            &+h2 {
+                @apply text-white;
+            }
+        }
+    }
+
+    .button-container {
+        .lead-form-button.next {
+            @apply bg-primary-500 hover:bg-primary-600 hover:text-black text-black shadow-none rounded-none hover:shadow-none select-none;
+        }
+
+        .lead-form-button.previous {
+            @apply bg-white hover:bg-primary-200 text-black shadow-none rounded-none hover:shadow-none select-none;
+            /* background: white;
+            color: #545454; */
+        }
+    }
+
+    .progressbar {
+        .progress {
+            @apply bg-primary-500;
+        }
+    }
+
+    .textarea-input {
+        @apply text-black focus:ring-0 focus:outline-none;
+    }
+
+    .lds-dual-ring:after {
+        @apply border-t-primary-500 border-b-primary-500;
+    }
+
+    .checkmark {
+        /* @apply shadow-primary-500; */
+
+        animation: fill-custom .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    }
+
+    .checkmark__circle {
+        @apply stroke-primary-500;
+    }
+}
+
+@keyframes fill-custom {
+    100% {
+        @apply shadow-[inset_0_0_0_80px] shadow-primary-500;
+    }
+}
+
+/* .beefit-lead-form .button-label h2 {
     font-size: 1em;
     font-family: 'Mulish', Sans-Serif;
     line-height: normal;
@@ -256,16 +335,10 @@ onMounted(() => {
     color: black;
 }
 
-.beefit-lead-form {
-    font-family: 'Mulish', Sans-Serif;
-    max-width: initial;
-    background: transparent;
-    border-radius: 10px;
-    padding: 25px;
-    margin-top: 50px;
-}
+
 
 .beefit-lead-form .progressbar {
+
     height: 9px;
     background: rgb(117, 117, 117);
     width: 100%;
@@ -280,17 +353,14 @@ onMounted(() => {
 }
 
 .beefit-lead-form .progressbar .progress {
+    @apply bg-primary-500;
     height: 9px;
-    background: white;
     width: 20%;
     border-radius: 4px;
     transition: width 0.3s;
 }
 
-.beefit-lead-form .button-label {
-    color: white;
-    background: white;
-}
+
 
 .beefit-lead-form .radio-label:checked+.button-label {
     background: rgb(69, 69, 69);
@@ -301,10 +371,7 @@ onMounted(() => {
     color: white !important;
 }
 
-.beefit-lead-form .button-container .lead-form-button.next {
-    background: white;
-    color: black;
-}
+
 
 .beefit-lead-form .button-container .lead-form-button.next:hover {
     background: black;
@@ -312,10 +379,7 @@ onMounted(() => {
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%), inset 0 -3px 0 rgb(0 0 0 / 32%);
 }
 
-.beefit-lead-form .button-container .lead-form-button.previous {
-    background: white;
-    color: #545454;
-}
+
 
 .beefit-lead-form .complete-text {
     text-align: center;
@@ -323,5 +387,5 @@ onMounted(() => {
     color: white;
     font-size: 20px;
     font-weight: bold;
-}
+} */
 </style>

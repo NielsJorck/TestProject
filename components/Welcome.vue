@@ -1,8 +1,8 @@
 <template>
-    <div class="grid grid-cols-2 gap-16 justify-around items-center justify-items-center">
-        <NuxtImg src="/img/welcome_img.jpg" />
+    <div class="segment">
+        <NuxtImg src="/img/welcome_img.jpg" height="750" />
         <article class="prose">
-            <h1 class="text-5xl font-bold uppercase">
+            <h1>
                 Velkommen til Forsh Fitness
             </h1>
             <p>

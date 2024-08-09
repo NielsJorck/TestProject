@@ -1,6 +1,7 @@
 {
   "name": "forshfitness",
   "dependencies": {
+    "@nuxt/icon": "^1.4.5",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@tailwindcss/typography": "^0.5.13",
@@ -16,5 +17,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@iconify-json/fa6-solid": "^1.1.24"
+  }
 }

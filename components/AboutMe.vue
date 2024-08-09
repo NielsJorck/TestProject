@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2 gap-16 justify-around items-center justify-items-center">
+    <div class="segment">
 
         <article class="prose">
             <!-- <h2>

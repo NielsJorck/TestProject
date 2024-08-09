@@ -4,11 +4,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## TODO
 
-* Styling
 * Menu
 * Scrollbar
-* Responsiveness
-* Image sizing
 * Translations (i18n)
 * BeeFit
 * * style incapsulation
