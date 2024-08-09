@@ -4,12 +4,9 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## TODO
 
-* Menu
+* Menu?
 * Scrollbar
 * Translations (i18n)
-* BeeFit
-* * style incapsulation
-* * General styling
 
 ## Setup
 

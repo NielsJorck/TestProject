@@ -17,7 +17,7 @@
         <meta name="description"
             content="Få en dedikeret coach, der deler dit ønske om forandring. Personlige planer tilpasset dig og din træningslokation, fokuseret på vægttab, muskelbygning, energi, sundhed og mental styrke.">
     </Head>
-    <!-- <Menu /> -->
+    <Menu />
     <NuxtPage />
 </template>
 <script setup>
@@ -40,7 +40,7 @@ body {
 }
 
 p {
-    @apply max-w-[60ch] text-pretty;
+    @apply max-w-[60ch] text-pretty whitespace-break-spaces;
 }
 
 aside {

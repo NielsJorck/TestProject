@@ -1,0 +1,95 @@
+{
+  "welcome": {
+    "title": "Velkommen til Forsh Fitness",
+    "body": "Med mig som din coach, får du en sparringspartner der drømmer lige så meget om at se en forandring for dig, som du selv gør. Det betyder at dit brændende ønske også er mit! \n\nKvaliteten af mine planer, er ikke noget jeg går på kompromis med. Så derfor vil jeg altid sørge for, den passer dig, din træningslokation og ikke mindst, dit liv. \n\nDer er mange der har en passion og drøm, om at opnå noget i livet med deres træning. Hvad end det er vægttab, muskelbygning, forøget energi i hverdagen, generel sundhed eller mental styrke. Så har det alt sammen en forbedrende effekt, igennem træning og en sund levestil.",
+    "button": "Lad mig hjælpe dig"
+  },
+  "included": {
+    "1": "Indledende samtaler",
+    "2": "Startbilleder og -vægt",
+    "3": "Skræddersyet kostplan",
+    "4": "Træningsprogram tilpasset dit liv",
+    "5": "Ugentlige check ins",
+    "6": "24/7 chat funktion",
+    "7": "App til tracking og kommunikation",
+    "8": "Resultater",
+    "title": "Min coaching inkludere:",
+    "button": "Lad mig hjælpe dig!"
+  },
+  "calculatorlead": {
+    "title": "Ikke sikker på, hvor du skal starte?",
+    "body": "Brug min gratis kalorieberegner nu til at regne ud, hvor meget du skal spise for at nå dine mål.",
+    "button": "Brug nu"
+  },
+  "about": {
+    "title": "Velkommen til Forsh Fitness",
+    "body": "Mit navn er Jonas, og jeg er her for at give dig en værdi i livet, du ikke vidste, du manglede. Jeg begyndte min egen rejse fra bunden, og mit mål med fitness var at bygge en bedre selvtillid og forbedre min mentale sundhed.",
+    "background": {
+      "title": "Min Baggrund",
+      "body": "For seks år siden gennemgik jeg en slem depression. Fitness blev mit værktøj til at komme igennem det. Det hele startede med én enkelt armbøjning. Denne ene armbøjning gav mig en utrolig følelse af at have opnået noget positivt for mig selv. Langsomt optrappede jeg til 100 armbøjninger om dagen."
+    },
+    "mission": {
+      "title": "Min Mission",
+      "body": "Jeg ønsker at dele min rejse, min viden og min dedikation med dig. Jeg vil hjælpe dig med at bevæge dig fra, hvor du er nu, til hvor du gerne vil være, ved at bruge fitness som et inspirerende redskab i stedet for en kedelig opgave."
+    },
+    "whyme": {
+      "title": "Hvorfor Vælge Mig?",
+      "body": "Vi har alle kun én chance i livet til at opnå vores drømme. Hvorfor udsætte dem? Lad mig hjælpe dig med at tage det første skridt mod et sundere og gladere liv."
+    },
+    "button": "Lad mig hjælpe dig"
+  },
+  "beefit": {
+    "title": "Forsh Fitness",
+    "body": "Udfyld formularen herunder for at få et uforpligtende opkald med mig",
+    "step1": {
+      "title": "Hvad er dit drømmemål?",
+      "option1": "Vægttab",
+      "option2": "Muskelopbygning",
+      "option3": "Vægttab og muskelopbygning",
+      "option4": "Andet"
+    },
+    "step2": {
+      "title": "Jeg er...",
+      "option1": "Mand",
+      "option2": "Kvinde"
+    },
+    "step3": {
+      "title": "Hvor gammel er du?",
+      "option1": "Under 18 år",
+      "option2": "18-25 år",
+      "option3": "26-35 år",
+      "option4": "Over 35 år"
+    },
+    "step4": {
+      "title": "Er du klar til at investere i dig selv?",
+      "option1": "Ja",
+      "option2": "Nej",
+      "option3": "Måske"
+    },
+    "step5": {
+      "title": "Fortæl mig lidt om dig selv..",
+      "placeholder": "Skriv her.."
+    },
+    "step6": {
+      "title": "Hvad drømmer du om at opnå inden for 6-12 måneder?",
+      "placeholder": "Skriv her.."
+    },
+    "step7": {
+      "title": "Hvor vil du kontaktes?",
+      "option1": "Telefon",
+      "option2": "Messenger",
+      "option3": "Instagram"
+    },
+    "step8": {
+      "title": "Dine kontaktoplysninger:",
+      "name": "Dit fulde navn",
+      "email": "Din email",
+      "phone": "Dit telefonnummer",
+      "instagram": "Din instagram"
+    },
+    "submit": {
+      "button": "Kom i gang nu",
+      "completetext": "Tusind tak, jeg kontakter dig hurtigst muligt."
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+    "welcome": {
+      "title": "Welcome to Forsh Fitness",
+      "body": "With me as your coach, you get a partner who dreams just as much about seeing a change in you as you do yourself. This means that your burning desire is also mine!\n\nThe quality of my plans is something I never compromise on. Therefore, I will always ensure that it suits you, your training location, and most importantly, your life.\n\nMany people have a passion and a dream to achieve something in life with their training. Whether it's weight loss, muscle building, increased energy in daily life, general health, or mental strength, it all has an improving effect through training and a healthy lifestyle.",
+      "button": "Let me help you"
+    },
+    "included": {
+      "1": "Initial consultations",
+      "2": "Starting photos and weight",
+      "3": "Tailored meal plan",
+      "4": "Workout plan adapted to your life",
+      "5": "Weekly check-ins",
+      "6": "24/7 chat function",
+      "7": "App for tracking and communication",
+      "8": "Results",
+      "title": "My coaching includes:",
+      "button": "Let me help you!"
+    },
+    "calculatorlead": {
+      "title": "Not sure where to start?",
+      "body": "Use my free calorie calculator now to figure out how much you need to eat to reach your goals.",
+      "button": "Use now"
+    },
+    "about": {
+      "title": "Welcome to Forsh Fitness",
+      "body": "My name is Jonas, and I am here to provide you with a value in life you didn't know you were missing. I started my own journey from scratch, and my goal with fitness was to build better self-confidence and improve my mental health.",
+      "background": {
+        "title": "My Background",
+        "body": "Six years ago, I went through a severe depression. Fitness became my tool to get through it. It all started with a single push-up. That one push-up gave me an incredible feeling of having achieved something positive for myself. Slowly, I worked my way up to doing 100 push-ups a day."
+      },
+      "mission": {
+        "title": "My Mission",
+        "body": "I want to share my journey, my knowledge, and my dedication with you. I want to help you move from where you are now to where you want to be, using fitness as an inspiring tool rather than a boring task."
+      },
+      "whyme": {
+        "title": "Why Choose Me?",
+        "body": "We all have only one chance in life to achieve our dreams. Why delay them? Let me help you take the first step towards a healthier and happier life."
+      },
+      "button": "Let me help you"
+    },
+    "beefit": {
+      "title": "Forsh Fitness",
+      "body": "Fill out the form below to get a no-obligation call with me",
+      "step1": {
+        "title": "What is your dream goal?",
+        "option1": "Weight loss",
+        "option2": "Muscle building",
+        "option3": "Weight loss and muscle building",
+        "option4": "Other"
+      },
+      "step2": {
+        "title": "I am...",
+        "option1": "Male",
+        "option2": "Female"
+      },
+      "step3": {
+        "title": "How old are you?",
+        "option1": "Under 18 years",
+        "option2": "18-25 years",
+        "option3": "26-35 years",
+        "option4": "Over 35 years"
+      },
+      "step4": {
+        "title": "Are you ready to invest in yourself?",
+        "option1": "Yes",
+        "option2": "No",
+        "option3": "Maybe"
+      },
+      "step5": {
+        "title": "Tell me a little about yourself..",
+        "placeholder": "Write here.."
+      },
+      "step6": {
+        "title": "What do you dream of achieving within 6-12 months?",
+        "placeholder": "Write here.."
+      },
+      "step7": {
+        "title": "Where do you want to be contacted?",
+        "option1": "Phone",
+        "option2": "Messenger",
+        "option3": "Instagram"
+      },
+      "step8": {
+        "title": "Your contact details:",
+        "name": "Your full name",
+        "email": "Your email",
+        "phone": "Your phone number",
+        "instagram": "Your Instagram"
+      },
+      "submit": {
+        "button": "Get started now",
+        "completetext": "Thank you very much, I will contact you as soon as possible."
+      }
+    }
+  }
+  

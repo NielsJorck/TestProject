@@ -21,9 +21,11 @@ useHead({
     ],
 })
 
+
+const { t } = useI18n()
 onMounted(() => {
     const step1 = {
-        title: "Hvad er dit drømmemål?",
+        title: t('beefit.step1.title'),
         inputs: [
             {
                 id: "goal",
@@ -33,17 +35,17 @@ onMounted(() => {
                     goToNextOnSelect: true,
                 },
                 options: [
-                    { label: "Vægttab", value: "Vægttab" },
-                    { label: "Muskelopbygning", value: "Muskelopbygning" },
-                    { label: "Vægttab og muskelopbygning", value: "Vægttab og muskelopbygning" },
-                    { label: "Andet", value: "Andet" }
+                    { label: t('beefit.step1.option1'), value: "Vægttab" },
+                    { label: t('beefit.step1.option2'), value: "Muskelopbygning" },
+                    { label: t('beefit.step1.option3'), value: "Vægttab og muskelopbygning" },
+                    { label: t('beefit.step1.option4'), value: "Andet" }
                 ],
                 result: undefined, // used internally.
             },
         ],
     };
     const step2 = {
-        title: "Jeg er...",
+        title: `${t('beefit.step2.title')}`,
         inputs: [
             {
                 id: "gender",
@@ -53,15 +55,15 @@ onMounted(() => {
                     goToNextOnSelect: true,
                 },
                 options: [
-                    { label: "Mand", value: "Mand" },
-                    { label: "Kvinde", value: "Kvinde" }
+                    { label: t('beefit.step2.option1'), value: "Mand" },
+                    { label: t('beefit.step2.option2'), value: "Kvinde" }
                 ],
                 result: undefined, // used internally
             },
         ],
     };
     const step3 = {
-        title: "Hvor gammel er du?",
+        title: t('beefit.step3.title'),
         inputs: [
             {
                 id: "age",
@@ -71,17 +73,17 @@ onMounted(() => {
                     goToNextOnSelect: true,
                 },
                 options: [
-                    { label: "Under 18 år", value: "Under 18" },
-                    { label: "18-25 år", value: "18-25" },
-                    { label: "26-35 år", value: "26-35" },
-                    { label: "Over 35 år", value: "35+" },
+                    { label: t('beefit.step3.option1'), value: "Under 18" },
+                    { label: t('beefit.step3.option2'), value: "18-25" },
+                    { label: t('beefit.step3.option3'), value: "26-35" },
+                    { label: t('beefit.step3.option4'), value: "35+" },
                 ],
                 result: undefined, // used internally
             },
         ],
     };
     const step4 = {
-        title: "Er du klar til at investere i dig selv?",
+        title: t('beefit.step4.title'),
         inputs: [
             {
                 id: "investere",
@@ -91,16 +93,16 @@ onMounted(() => {
                     goToNextOnSelect: true,
                 },
                 options: [
-                    { label: "Ja", value: "Ja" },
-                    { label: "Nej", value: "Nej" },
-                    { label: "Måske", value: "Måske" }
+                    { label: t('beefit.step4.option1'), value: "Ja" },
+                    { label: t('beefit.step4.option2'), value: "Nej" },
+                    { label: t('beefit.step4.option3'), value: "Måske" }
                 ],
                 result: undefined, // used internally
             },
         ],
     };
     const step5 = {
-        title: "Fortæl mig lidt om dig selv..",
+        title: t('beefit.step5.title'),
         inputs: [
             {
                 id: "fortael-text",
@@ -108,14 +110,14 @@ onMounted(() => {
                 type: "textarea",
                 config: {
                     goToNextOnSelect: true,
-                    placeholder: "Skriv her.."
+                    placeholder: t('beefit.step5.placeholder')
                 },
                 result: undefined, // used internally
             },
         ],
     };
     const step6 = {
-        title: "Hvad drømmer du om at opnå inden for 6-12 måneder?",
+        title: t('beefit.step6.title'),
         inputs: [
             {
                 id: "droemme-text",
@@ -123,14 +125,14 @@ onMounted(() => {
                 type: "textarea",
                 config: {
                     goToNextOnSelect: true,
-                    placeholder: "Skriv her.."
+                    placeholder: t('beefit.step6.placeholder')
                 },
                 result: undefined, // used internally
             },
         ],
     };
     const step7 = {
-        title: "Hvor vil du kontaktes?",
+        title: t('beefit.step7.title'),
         inputs: [
             {
                 id: "kontaktes",
@@ -140,16 +142,16 @@ onMounted(() => {
                     goToNextOnSelect: true,
                 },
                 options: [
-                    { label: "Telefon", value: "Telefon" },
-                    { label: "Messenger", value: "Messenger" },
-                    { label: "Instagram", value: "Instagram" }
+                    { label: t('beefit.step7.option1'), value: "Telefon" },
+                    { label: t('beefit.step7.option2'), value: "Messenger" },
+                    { label: t('beefit.step7.option3'), value: "Instagram" }
                 ],
                 result: undefined, // used internally
             },
         ],
     };
     const step8 = {
-        title: "Dine kontaktoplysninger:",
+        title: t('beefit.step8.title'),
         inputs: [
             {
                 id: "name",
@@ -157,7 +159,7 @@ onMounted(() => {
                 type: "text",
                 config: {
                     icon: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v1/profile.svg",
-                    placeholder: "Dit fulde navn",
+                    placeholder: t('beefit.step8.name'),
                 },
                 result: undefined, // used internally
             },
@@ -167,7 +169,7 @@ onMounted(() => {
                 type: "text",
                 config: {
                     icon: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v1/mail.svg",
-                    placeholder: "Din email",
+                    placeholder: t('beefit.step8.email'),
                 },
                 result: undefined, // used internally
             },
@@ -177,7 +179,7 @@ onMounted(() => {
                 type: "text",
                 config: {
                     icon: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v1/phone.svg",
-                    placeholder: "Dit telefonnummer",
+                    placeholder: t('beefit.step8.phone'),
                 },
                 result: undefined, // used internally
             },
@@ -187,7 +189,7 @@ onMounted(() => {
                 type: "text",
                 config: {
                     icon: "https://beefit-tracker.s3.eu-west-2.amazonaws.com/website-components/beefit-lead-form/v1/instagram.png",
-                    placeholder: "Din instagram",
+                    placeholder: t('beefit.step8.instagram'),
                 },
                 result: " ", // used internally
             }
@@ -196,15 +198,15 @@ onMounted(() => {
     const leadForm = {
         id: "my-lead-form",
         endpoint: "https://mainserver-coach.herokuapp.com/api/lead/webhook?api_key=ws-c49cd414-fcc8-4d9f-8fa8-cddef9db541d",
-        submitText: "Kom i gang nu",
+        submitText: t('beefit.submit.button'),
         enableFacebookPixel: true,
-        completeText: "Tusind tak, jeg kontakter dig hurtigst muligt.",
+        completeText: t('beefit.submit.completetext'),
         steps: [step1, step2, step3, step4, step5, step6, step7, step8],
     };
     const result = {};
     setTimeout(function () {
         const form1 = new BeefitLeadForm("example-lead-form", leadForm);
-    }, 3000);
+    }, 1);
 
 })
 </script>
@@ -213,8 +215,8 @@ onMounted(() => {
     <div class="segment dark">
         <NuxtImg src="/img/image5-2-e1704805299149.jpeg" height="550" />
         <div class="prose text-white">
-            <h1 class="text-center">Forsh Fitness</h1>
-            <p>Udfyld formularen herunder for at få et uforpligtende opkald med mig</p>
+            <h1 class="text-center">{{ $t('beefit.title') }}</h1>
+            <p>{{ $t('beefit.body') }}</p>
             <div id="bee-fit" class="max-w-full overflow-hidden bg-black text-white">
                 <div class="beefit-lead-form" id="example-lead-form">
                     <div class="form-content">

@@ -2,13 +2,12 @@
     <div class="segment dark">
 
         <article class="prose">
-            <h2>
-                IKKE SIKKER PÅ, HVOR DU SKAL STARTE?
-            </h2>
+            <h2 class="uppercase">
+                {{ $t('calculatorlead.title') }} </h2>
             <p>
-                Brug min gratis kalorieberegner nu til at regne ud, hvor meget du skal spise for at nå dine mål.
+                {{ $t('calculatorlead.body') }}
             </p>
-            <NuxtLink class="button" to="/calorie-calculator">Brug nu</NuxtLink>
+            <NuxtLink class="button" to="/calorie-calculator">{{ $t('calculatorlead.button') }}</NuxtLink>
         </article>
         <NuxtImg src="/img/Forsh-Fitness-Calorie-Calculator.png" height="750" />
     </div>

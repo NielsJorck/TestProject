@@ -24,32 +24,19 @@
                 ser dig selv være. Ved at bruge fitness som et redskab, frem for en kedelig opgave.
 
                 Vi har en chance i livet til at opnå vores drømme, så hvorfor udsætte dem?
-
             </p> -->
-            <h2>Velkommen til Forsh Fitness</h2>
-            <p>Mit navn er Jonas, og jeg er her for at give dig en værdi i livet, du ikke vidste, du manglede. Jeg begyndte
-                min egen rejse fra bunden, og mit mål med fitness var at bygge en bedre selvtillid og forbedre min mentale
-                sundhed.</p>
+            <h2>{{ $t('about.title') }}</h2>
+            <p>{{ $t('about.body') }}</p>
 
-            <h3>Min Baggrund</h3>
-            <p>For seks år siden gennemgik jeg en slem depression. Fitness blev mit værktøj til at komme igennem det.
-                Det
-                hele startede med én enkelt armbøjning. Denne ene armbøjning gav mig en utrolig følelse af at have
-                opnået
-                noget positivt for mig selv. Langsomt optrappede jeg til 100 armbøjninger om dagen.</p>
+            <h3>{{ $t('about.background.title') }}</h3>
+            <p>{{ $t('about.background.body') }}</p>
 
-            <h3>Min Mission</h3>
-            <p>Jeg ønsker at dele min rejse, min viden og min dedikation med dig. Jeg vil hjælpe dig med at bevæge dig
-                fra,
-                hvor du er nu, til hvor du gerne vil være, ved at bruge fitness som et inspirerende redskab i stedet for
-                en
-                kedelig opgave.</p>
+            <h3>{{ $t('about.mission.title') }}</h3>
+            <p>{{ $t('about.mission.body') }}</p>
 
-            <h3>Hvorfor Vælge Mig?</h3>
-            <p>Vi har alle kun én chance i livet til at opnå vores drømme. Hvorfor udsætte dem? Lad mig hjælpe dig med
-                at
-                tage det første skridt mod et sundere og gladere liv.</p>
-            <NuxtLink to="#bee-fit" class="button">Lad mig hjælpe dig</NuxtLink>
+            <h3>{{ $t('about.whyme.title') }}</h3>
+            <p>{{ $t('about.whyme.body') }}</p>
+            <NuxtLink to="#bee-fit" class="button">{{ $t('about.button') }}</NuxtLink>
         </article>
         <NuxtImg src="/img/Forsh-Fitness-Transformation.jpg"></NuxtImg>
     </div>
