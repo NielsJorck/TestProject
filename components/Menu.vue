@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black p-4 flex justify-end gap-4">
+    <div class="bg-black py-4 px-8 flex justify-end gap-4">
         <NuxtLink v-for="locale in locales" :key="locale.code" :to="switchLocalePath(locale.code)">
             <Icon size="2em" :name="locale.icon"></Icon>
         </NuxtLink>
