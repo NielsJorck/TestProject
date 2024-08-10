@@ -57,7 +57,7 @@ aside {
 
 
 :where(.segment) {
-    @apply grid grid-cols-1 md:grid-cols-2 p-4 gap-y-4 gap-x-16 justify-around items-center justify-items-center md:justify-items-end w-full;
+    @apply grid grid-cols-1 md:grid-cols-2 py-4 px-8 gap-y-4 gap-x-16 justify-around items-center justify-items-center md:justify-items-end w-full;
 
 
     h1 {
