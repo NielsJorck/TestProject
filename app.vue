@@ -36,7 +36,11 @@ body {
     outline: 1px solid green;
 } */
 .button {
-    @apply bg-primary-500 px-4 py-3 mt-4 uppercase font-bold no-underline hover:bg-primary-600 transition-colors justify-self-center block md:inline-block text-center md:text-start;
+    @apply bg-primary-500 px-4 py-3 mt-4 uppercase font-bold no-underline hover:bg-primary-600 transition-all justify-self-center block md:inline-block text-center md:text-start outline outline-2 -outline-offset-4 outline-white hover:outline-primary-500 hover:outline-offset-2;
+}
+
+.dark .button {
+    @apply outline-black hover:outline-primary-500;
 }
 
 p {
