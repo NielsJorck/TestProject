@@ -1,28 +1,7 @@
 <template>
-    <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <title>Forsh Fitness - Personlig træning og coaching</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link rel="preconnect" href="https://beefit-tracker.s3.eu-west-2.amazonaws.com">
-        <link rel="preconnect" href="https://ajax.googleapis.com">
-
-
-        <link rel="icon" :href="`${baseUrl}/img/favicon/FF-Favicon-150x150.jpg`" sizes="32x32">
-        <link rel="icon" :href="`${baseUrl}/img/favicon/FF-Favicon-300x300.jpg`" sizes="192x192">
-        <link rel="apple-touch-icon" :href="`${baseUrl}/img/favicon/FF-Favicon-300x300.jpg`">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&amp;display=swap">
-        <meta name="msapplication-TileImage" :content="`${baseUrl}/img/favicon/FF-Favicon-300x300.jpg`">
-        <meta name="description"
-            content="Få en dedikeret coach, der deler dit ønske om forandring. Personlige planer tilpasset dig og din træningslokation, fokuseret på vægttab, muskelbygning, energi, sundhed og mental styrke.">
-    </Head>
     <Menu />
     <NuxtPage />
 </template>
-<script setup>
-const baseUrl = process.env.NUXT_APP_BASE_URL ?? '';
-</script>
 <style>
 body {
     /* background-image: url('/img/image5-2-e1704805299149.jpeg');
